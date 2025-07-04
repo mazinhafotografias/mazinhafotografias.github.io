@@ -1,69 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazinha Fotografias</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mazinha Ffotografias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 4px #000;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #f6d365;
+    }
+    header p {
+      font-size: 1.3rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #0c2340;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #0c2340;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .contact-info {
+      margin-top: 1rem;
+    }
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Mazinha Fotografias</div>
-        <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#contato">Contato</a>
-            <a href="#agendamento">Agendamento</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Mazinha Fotografias</h1>
+    <p>25 anos de experiência registrando momentos inesquecíveis!</p>
+  </header>
 
-    <section class="hero">
-        <h1>Capturando momentos com amor e sensibilidade</h1>
-        <p>Newborn | Studio | Eventos | Ensaios Externos</p>
-    </section>
+  <section>
+    <h2>Portfólio</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/?baby" alt="Newborn">
+      <img src="https://source.unsplash.com/featured/?wedding" alt="Casamento">
+      <img src="https://source.unsplash.com/featured/?event" alt="Evento">
+      <img src="https://source.unsplash.com/featured/?pregnant" alt="Gestante">
+    </div>
+  </section>
 
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <ul>
-            <li>👶 Newborn</li>
-            <li>📸 Ensaio em Estúdio</li>
-            <li>🎉 Eventos (aniversários, casamentos, batizados, etc.)</li>
-            <li>🌳 Ensaios Externos (gestantes, família, etc.)</li>
-        </ul>
-    </section>
+  <section>
+    <h2>Contato</h2>
+    <p>Agende seu ensaio ou evento com facilidade!</p>
+    <div class="contact-info">
+      <p>📲 <a href="https://wa.me/5588999563800" target="_blank">(88) 9 9956-3800</a></p>
+      <p>📧 <a href="mailto:mazinhafotografa@gmail.com">mazinhaartcores@gmail.com</a></p>
+      <p>📷 Instagram: <a href="https://instagram.com/mazinhafotografa" target="_blank">@mazinhafotografa</a></p>
+    </div>
+  </section>
 
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <p>Em breve, algumas fotos incríveis por aqui!</p>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>📲 WhatsApp: <a href="https://wa.me/5588999563800" target="_blank">88 9 9956-3800</a></p>
-        <p>📷 Instagram: <a href="https://instagram.com/mazinhafotografa" target="_blank">@mazinhafotografa</a></p>
-    </section>
-
-    <section id="agendamento">
-        <h2>Agende seu ensaio</h2>
-        <form action="#" method="post">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <input type="tel" name="telefone" placeholder="Seu telefone" required>
-            <select name="tipo">
-                <option value="">Tipo de Ensaio</option>
-                <option>Newborn</option>
-                <option>Studio</option>
-                <option>Eventos</option>
-                <option>Externos</option>
-            </select>
-            <input type="date" name="data" required>
-            <textarea name="mensagem" placeholder="Mensagem adicional"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Mazinha Fotografias. Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Mazinha Fotografias. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
