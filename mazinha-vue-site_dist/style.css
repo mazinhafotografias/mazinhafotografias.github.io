@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+}
+header {
+  background: linear-gradient(to right, #0f3057, #00587a);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.hero {
+  padding: 4rem 2rem;
+  background-color: #ffe100;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+.gallery img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+.sobre, .contato {
+  padding: 2rem;
+  background: #f0f0f0;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0f3057;
+  color: white;
+}
