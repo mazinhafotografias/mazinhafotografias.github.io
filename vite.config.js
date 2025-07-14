@@ -1,8 +1,15 @@
 // vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import path from 'path'
 
 export default defineConfig({
-  base: '/mazinhafotografias.github.io/',
-  plugins: [vue()]
+  
+  base: '/mazinhafotografias/',
+  plugins: [vue()],
+  resolve:{
+    alias: {
+      '@': path.resolve(__dirname, 'src') // <--- isso define "@" como "src")
+    }
+  }
 })
